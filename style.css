@@ -1,0 +1,81 @@
+
+
+body {
+  background-color: #2c3e50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+button{
+    background-color: #2c3e50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.5em;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: gray;
+}   
+
+
+
+.calculadora {
+  background-color: #364c61;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.calculadora input {
+  width: 100%;
+  height: 50px;
+  font-size: 1.5em;
+  text-align: right;
+  margin-bottom: 10px;
+  padding-right: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ecf0f1;
+}
+
+.botones {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  grid-gap: 10px;
+}
+
+.botones button {
+  height: 60px;
+  font-size: 1.2em;
+  background-color: #95a5a6;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  color: white;
+}
+
+.botones button:hover {
+  background-color: #bdc3c7;
+}
+
+.botones button:active {
+  background-color: #7f8c8d;
+}
+
+.botones button:nth-child(4n) {
+  background-color: rgba(2, 118, 235, 0.467);
+}
+
+.botones button:nth-child(4n):hover {
+  background-color: rgba(1, 68, 134, 0.467);
+}
+
+
+
