@@ -1,15 +1,15 @@
-#Calculadora Web
+# Calculadora Web
 
 Calculadora Web básica desarrollado por HTML, CSS y JavaScript.
 
-##Funcionalidades
+## Funcionalidades
 
 -Suma
 -Resta
 -Multiplicación
 -División
 
-##Tecnologías
+## Tecnologías
 
 -HTML
 -CSS
@@ -19,7 +19,7 @@ Calculadora Web básica desarrollado por HTML, CSS y JavaScript.
 
 Practicar lógica de programación y manipulación DOM con JavaScript.
 
-
+## Demo
 
 
 
