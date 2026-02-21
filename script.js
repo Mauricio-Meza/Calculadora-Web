@@ -6,7 +6,11 @@ let expresion = "";
 // Agrega click a cada botón (excepto Limpiar que tiene otro handler)
 botones.forEach(boton => {
   boton.addEventListener("click", () => {
-    const valor = boton.textContent;
+    const valor = boton.dataset.valor || boton.textContent;
+    
+    if (valor === "x") {
+      valor = "*";
+    }
 
     if (valor === "=") {
       try {
@@ -20,7 +24,7 @@ botones.forEach(boton => {
     } else {
       // Construye la expresión agregando el valor pulsado
       expresion += valor;
-      pantalla.value = expresion;
+      pantalla.value = expresion.replaceAll("*", "x");
     }
   });
 });
@@ -41,7 +45,10 @@ function calcular() {
 function borrar(){
    resultado.value = resultado.value.slice(0, -1);
    expresion = expresion.slice(0, -1);
+   pantalla.value = expresion.replaceAll("*", "x");
 };
+
+
 
 
 
